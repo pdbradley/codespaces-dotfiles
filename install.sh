@@ -42,3 +42,5 @@ cp -r .config/* ~/.config
 
 # install all the plugins in neovim and quit
 nvim +PlugInstall +qall
+
+ZSH_CUSTOM="$HOME/.config/oh-my-zsh/custom"
