@@ -20,3 +20,7 @@ apt install -y silversearcher-ag
 # basically copying the dotfiles within this repo
 # putting them in the right place in the codespace
 cp -r .config/* ~/.config
+
+
+# install all the plugins in neovim and quit
+nvim +PlugInstall +qall
