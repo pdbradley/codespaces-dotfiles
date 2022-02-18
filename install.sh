@@ -43,8 +43,8 @@ cp -r .config/* ~/.config
 # install all the plugins in neovim and quit
 nvim +PlugInstall +qall
 
-apt-get install -y zsh
-chsh -s /usr/bin/zsh
+# apt-get install -y zsh
+# chsh -s /usr/bin/zsh
 # install zsh
 # apt install -y zsh
 # install oh my zsh
