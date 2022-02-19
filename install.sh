@@ -43,12 +43,13 @@ cp -r .config/* ~/.config
 # install all the plugins in neovim and quit
 nvim +PlugInstall +qall
 
+# install zsh
 sudo apt-get install -y zsh
 chsh -s /usr/bin/zsh
-# install zsh
-# apt install -y zsh
 # install oh my zsh
-# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+sudo chsh -s $(which zsh) $(whoami)
 
 
 ZSH_CUSTOM="$HOME/.config/oh-my-zsh/custom"
