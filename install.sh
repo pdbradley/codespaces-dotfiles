@@ -49,7 +49,8 @@ chsh -s /usr/bin/zsh
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-sudo chsh -s $(which zsh) $(whoami)
+sudo chsh -s /usr/bin/zsh $USERNAME
+
 
 
 ZSH_CUSTOM="$HOME/.config/oh-my-zsh/custom"
