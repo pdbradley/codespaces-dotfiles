@@ -3,6 +3,9 @@
 # this script will be run by codespaces
 # after importing this dotfile repo into a codespace
 
+# install sudo
+apt-get install -y sudo
+
 # tmux and neovim
 sudo apt-get install -y tmux
 sudo apt-get install -y neovim
@@ -44,7 +47,7 @@ cp -r .config/* ~/.config
 nvim +PlugInstall +qall
 
 # install zsh and sudo
-sudo apt-get install -y zsh sudo
+sudo apt-get install -y zsh
 # install oh my zsh
 rm -rf "$HOME/.oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
