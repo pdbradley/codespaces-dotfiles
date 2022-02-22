@@ -44,7 +44,7 @@ cp -r .config/* ~/.config
 nvim +PlugInstall +qall
 
 # install zsh
-sudo apt-get --yes --force-yes install zsh
+# sudo apt-get --yes --force-yes install zsh
 # install oh my zsh
 rm -rf "$HOME/.oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
