@@ -45,7 +45,7 @@ nvim +PlugInstall +qall
 
 # install zsh
 sudo apt-get install -y zsh
-chsh -s /usr/bin/zsh
+sudo chsh -s /usr/bin/zsh codespace
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
