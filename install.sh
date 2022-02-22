@@ -45,7 +45,10 @@ nvim +PlugInstall +qall
 
 # install zsh
 # the yes is to get past a warning related to an existing file in /etc 
+sudo cp /etc/zsh/zlogin /etc/zsh/zlogin.original
 yes | sudo apt-get install zsh
+sudo cp /etc/zsh/zlogin.original /etc/zsh/zlogin
+
 # install oh my zsh
 rm -rf "$HOME/.oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -55,6 +58,5 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 cp -r .config/oh-my-zsh/* ~/.oh-my-zsh
 
 # don't know why this line below does not work
-# sudo chsh -s /usr/bin/zsh $USERNAME
 sudo chsh -s /usr/bin/zsh $(whoami)
 
