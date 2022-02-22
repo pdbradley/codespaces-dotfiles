@@ -56,5 +56,5 @@ cp -r .config/oh-my-zsh/* ~/.oh-my-zsh
 
 # don't know why this line below does not work
 # sudo chsh -s /usr/bin/zsh $USERNAME
-sudo chsh -s /usr/bin/zsh codespace
+sudo chsh -s /usr/bin/zsh $(whoami)
 
