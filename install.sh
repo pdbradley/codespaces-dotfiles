@@ -44,10 +44,12 @@ cp -r .config/* ~/.config
 nvim +PlugInstall +qall
 
 # install zsh
-# sudo apt-get --yes --force-yes install zsh
+# the yes is to get past a warning related to an existing file in /etc 
+yes | sudo apt-get install zsh
 # install oh my zsh
 rm -rf "$HOME/.oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 #copy my custom oh my zsh stuff
 cp -r .config/oh-my-zsh/* ~/.oh-my-zsh
