@@ -49,10 +49,10 @@ sudo apt-get install -y zsh
 rm -rf "$HOME/.oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+#copy my custom oh my zsh stuff
+cp -r ./config/oh-my-zsh/* ~/.oh-my-zsh
 
-sudo chsh -s /usr/bin/zsh codespace
+# don't know why this line below does not work
 # sudo chsh -s /usr/bin/zsh $USERNAME
+sudo chsh -s /usr/bin/zsh codespace
 
-
-
-# ZSH_CUSTOM="$HOME/.config/oh-my-zsh/custom"
