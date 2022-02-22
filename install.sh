@@ -4,7 +4,7 @@
 # after importing this dotfile repo into a codespace
 
 # install sudo
-apt-get install -y sudo
+# apt-get install -y sudo
 
 # tmux and neovim
 sudo apt-get install -y tmux
