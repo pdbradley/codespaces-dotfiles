@@ -3,6 +3,9 @@
 # this script will be run by codespaces
 # after importing this dotfile repo into a codespace
 
+# I really hope this does not work
+sleep 45
+
 # tmux and neovim
 sudo apt-get install -y tmux
 sudo apt-get install -y neovim
