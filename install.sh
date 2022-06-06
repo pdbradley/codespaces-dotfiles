@@ -24,11 +24,12 @@ create_symlinks() {
 create_symlinks
 #-------------------------------------------------------------
 # recursive copy of .config/ in this repo into the home folder
+mkdir -p ~/.config
 cp -r .config/* ~/.config
 #-------------------------------------------------------------
 # copy the setup script into homedir bc running it 
 # automatically is a nightmare and breaks the codespace setup
-cp setupcodespace.sh ~/
+cp setupcodespace.sh ~/setupcodespace.sh
 
 
 
